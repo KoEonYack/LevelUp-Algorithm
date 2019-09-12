@@ -3,7 +3,7 @@
     @ Prob. 59p
     @ Algo:
     @ Start day: 19. 09. 12
-    @ End day: 19. 09.
+    @ End day: 19. 09. 12
 '''
 
 # input 5 (강의 갯수)
