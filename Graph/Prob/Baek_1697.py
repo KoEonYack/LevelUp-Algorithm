@@ -18,7 +18,7 @@ def bfs(N, M):
         for i in range(size):
             n = q[0]
             q.remove(n)
-    
+
             if n is M:
                 return time
             if n>0 and visit[n-1] is 0:
