@@ -1,24 +1,20 @@
-def DFS(v):
-    if n is v:
-        global cnt
-        cnt = cnt + 1
-    else:
-        for i in range(Map[v]):
-            if Map[v][i] is 1 and ch[i] is 0:
-                ch[i] = 1
-                DFS(Map[v][i])
-                ch[i] = 0
+def solution(goods, boxes):
+    answer = 0
+    goods.sort(reverse=True)
+    boxes.sort(reverse=True)
+    answer_box_idx = []
+    answer_goods_idx = []
 
 
-n, m = map(int, input().split())
-Map = [[0] * 30 for _ in range(30)]
-ch = [0] * 30
-cnt = 0
+    for i in range(len(boxes)):
+        for j in range(len(goods)):
+            if boxes[i] >= goods[j] and (i not in answer_box_idx) and (j not in answer_goods_idx):
+                answer_box_idx.append(i)
+                answer_goods_idx.append(j)
 
-for i in range(n):
-    a, b = map(int, input().split())
-    Map[a][b] = 1
+    return len(answer_box_idx)
 
-ch[1] = 1
-DFS(1)
-print(cnt)
+
+a = solution([5,3,7], [3,7,6])
+a = solution([5,3,7], [3,7,6])
+print(a)
