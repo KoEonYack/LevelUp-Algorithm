@@ -11,11 +11,13 @@
 import sys
 sys.setrecursionlimit(30000)
 
+
 def dfs(x):
     check[x] = True
     for i in Vertex[x]:
         if check[i] is False:
             dfs(i)
+
 
 VertexNum, EdgeNum = map(int, sys.stdin.readline().split())
 Vertex = [[] for _ in range(VertexNum + 1)]  # 1 <= Vertex <= 1000
