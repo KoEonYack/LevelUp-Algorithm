@@ -1,5 +1,5 @@
 '''
-    @ 70. 경로탐색
+    @ 70. 그래프 최단거리
     @ Idea. BFS
     @ TestCase:
 6 9
@@ -12,8 +12,8 @@
 4 6
 6 2
 6 5
-    @ Start day: 19. 09. 25
-    @ End day: 19. 09. 25
+    @ Start day: 19. 11. 30
+    @ End day: 19. 11. 30
 '''
 
 Map = [[] for i in range(30)]
