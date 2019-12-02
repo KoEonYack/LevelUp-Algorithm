@@ -12,14 +12,27 @@
 
 N = 3
 inputArr = [2, 1, 3]
-arriveArr = [i for i in range(1, N+1)] # 1 ~ N
+ExpectArr = [i for i in range(1, N+1)] # 1 ~ N
 stack = []
-step = []
-while len(inputArr) > 0:
 
 
+while len(ExpectArr) != 0: # 예상 값이 다 사라지면 반복문 종료
+    if len(inputArr) == 0 and len(stack) > 0 and len(stack) > 0: # 더 이상 들어올 값이 없을 경우
+        print("Impossible")
+        break
 
-if len(arriveArr) == 0:
-    print(step)
-else:
-    print("Impossible")
+    if len(inputArr) != 0:
+        num = inputArr.pop()
+        stack.append(num)
+        print("P", end=" ")
+
+    print(stack)
+    print(ExpectArr)
+    if stack[-1] == ExpectArr[0]:
+        ExpectArr.pop()
+        stack.remove(stack[-1])
+        print("O", end=" ")
+        continue
+    else:
+        continue
+
