@@ -1,0 +1,51 @@
+'''
+    @ 81. 지뢰찾기
+    @ Idea.
+    @ TestCase:
+0 1 0 0 0
+0 0 0 0 0
+0 0 0 1 0
+0 0 1 0 0
+0 0 0 0 0
+
+* f * 0 0
+0 * 0 * 0
+0 0 * f *
+0 * f * 0
+0 0 * 0 0
+
+    @ Start day: 19. 12. 02.
+    @ End day: 19. 12. 02.
+'''
+
+flag = []
+mineswepper = [ [0] * 5 for _ in range(5) ]
+dx = [-1, 1, 0, 0]
+dy = [0, 0, -1, 1]
+
+'''
+for i in range(5):
+    flag.append(input('깃발 값과 함께 입력하세요 : ').split(' '))
+'''
+flag = [[0, 1, 0, 0, 0],
+        [0, 0, 0, 0, 0],
+        [0, 0, 0, 1, 0],
+        [0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 0]]
+
+for i in range(len(flag)):
+    for j in range(len(flag[0])):
+
+        if flag[i][j] == 1: # 지뢰를 발견할 경우
+
+            mineswepper[i][j] = 'f'
+            for k in range(4):
+                xx = i + dx[k]
+                yy = j + dy[k]
+                if xx < 5 and xx >= 0 and yy < 5 and yy >= 0 : # 상하좌우 숫자를 심기
+                    mineswepper[yy][xx] = '*'
+
+print(flag)
+for i in range(len(mineswepper)):
+    print(mineswepper[i])
+

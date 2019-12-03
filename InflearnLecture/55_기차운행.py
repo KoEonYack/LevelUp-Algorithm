@@ -3,8 +3,9 @@
     @ Idea. 스택,
             종료 조건: 모든 자동차가 들어왔을 때 스택이 비어있지 않는다면 Impossible
     @ TestCase:
-        input:  3
-                2 1 3
+        input:
+3
+2 1 3
         output: PPOOPO
     @ Start day: 19. 10. 09
     @ End day: 19. 10. 09
