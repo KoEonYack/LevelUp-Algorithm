@@ -1,10 +1,9 @@
 ## Actural Coding Test
 
 #### Part1 (Code. Carrot)
-- __Prob 1__: 
+- __Prob 1__: Array
 - __Prob 2__: 
-- __Prob 3__: 
-- __Prob 4__: 
+- __Prob 3__: DP, Brute Force?
 
 #### Part2 (Code. Big-People)
 - __Prob 1__: Regex
