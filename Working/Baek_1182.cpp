@@ -20,6 +20,7 @@ int N;
 int result;
 
 void go(vector<int> numVec, int index, int sum) {
+
 	if (N == index) {
 		if (sum == result) {
 			answer += 1;
