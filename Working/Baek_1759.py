@@ -44,7 +44,6 @@ inputList = list(map(str, input().split()))
 inputList.sort()
 
 combStr = []
-vowel = 0
 index = 0
 
 solution(L, inputList, combStr, index)
