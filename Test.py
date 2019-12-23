@@ -1,6 +1,10 @@
 
 
 
-arr = [1, 2, 3]
-print(arr[-1])
-print(min(0, 1))
+from queue import PriorityQueue
+que = PriorityQueue()
+que.put((-1, 1))
+que.put((-2, 2))
+
+for i in range(len(que.queue)):
+    print (que.queue[i][-1])
