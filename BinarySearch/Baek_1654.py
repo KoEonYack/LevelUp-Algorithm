@@ -24,6 +24,7 @@ def solution():
 
         if result >= M:
             start = mid + 1
+            print(start, end)
             if mid > answer:
                 answer = mid
         else:
