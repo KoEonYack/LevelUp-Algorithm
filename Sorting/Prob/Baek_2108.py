@@ -5,7 +5,7 @@
       Ref Prob.
     @ Algo: Sort
     @ Start day: 20. 01. 04
-    @ End day:  20. 01.
+    @ End day:  20. 01. 04
 """
 
 """
