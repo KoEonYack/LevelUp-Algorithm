@@ -16,7 +16,7 @@ def bfs(start):
     while q:
         node = q.popleft()
 
-        for next in v[next]:
+        for next in v[node]:
             if check[next] == 0:
                 # 다음 방문할 정점의 거리를 현재 정점까지의 거리 +1이됩니다.
                 check[next] = check[node] + 1
