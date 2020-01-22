@@ -1,8 +1,7 @@
 '''
     @ 1260. DFS와 BFS
     @ Prob. https://www.acmicpc.net/problem/1260
-     Ref. https://jun-itworld.tistory.com/18
-          https://jun-itworld.tistory.com/18
+    @ Ref. https://jun-itworld.tistory.com/18
     @ Algo: DFS, BFS
     @ Start day: 19. 09. 18
     @ End day:
@@ -49,6 +48,30 @@ for _ in range(M):
 
 dfs(V)
 print(bfs(V))
+
+
+"""
+4 5 1
+1 2
+1 3
+1 4
+2 4
+3 4
+>
+1 2 4 3 - DFS
+1 2 3 4 - BFS
+
+
+5 5 3
+5 4
+5 2
+1 2
+3 4
+3 1
+>
+3 1 2 5 4
+3 1 4 2 5
+"""
 
 
 
