@@ -9,11 +9,11 @@
 """
 
 while True:
-    inputStr = list(map(str, input().upper().split()))
-    if inputStr[0] is ["EOI"]:
+    inputStr = str(input()).upper()
+    if inputStr == "EOI":
         break
     else:
-        if ["NEMO"] in inputStr:
+        if "NEMO" in inputStr:
             print("Found")
         else:
             print("Missing")
