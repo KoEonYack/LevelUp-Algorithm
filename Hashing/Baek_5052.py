@@ -11,13 +11,10 @@ import sys
 input = sys.stdin.readline
 
 def solve(contacts):
-    print(contacts)
     contacts.sort()
-
     st = contacts[0]
 
     for contact in contacts[1:]:
-        print(st, contact)
         if st in contact:
             return "NO"
         else:
