@@ -1,7 +1,5 @@
-from queue import PriorityQueue
-numbers, Q = [9, 1, 4, 5], PriorityQueue()
-for number in numbers:
-    Q.put((-number, number))
 
-while not Q.empty():
-    print (Q.get())
+M = 3
+N = 2
+cache = [[False] * M for _ in range(N)]
+print(cache)

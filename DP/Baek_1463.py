@@ -1,18 +1,28 @@
 """
     @ 1463. 1로 만들기
     @ Prob. https://www.acmicpc.net/problem/1463
-     Ref.
+     Ref.   https://chunghyup.tistory.com/49
     @ Algo: DP
-    @ Start day: 20. 01. 13.
-    @ End day: 20. 01. 13.
+    @ Start day: 20. 01. 27.
+    @ End day: 20. 01. 27.
 """
 
-import sys
 
 N = int(input())
-MAX = 1000001
-DP = [sys.maxsize] * MAX
-DP[1] = 0
+arr = [0] * (N+1)
 
-for i in range(N):
-    DP[i+1] = min(DP[i+1], DP[i] + 1)
+arr[2] = 1
+arr[3] = 1
+
+for i in range(4, N+1):
+    arr[i] += min(arr[i//2], arr[i//3], arr[i-1]) + 1
+
+print(arr)
+print(arr[N])
+
+"""
+2
+>
+1
+
+"""
