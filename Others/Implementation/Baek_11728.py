@@ -14,13 +14,13 @@ input = sys.stdin.readline
 N, M = map(int, input().split())
 arr1 = list(map(int, input().split()))
 arr2 = list(map(int, input().split()))
-print(*sorted(list(set(arr1 + arr2))))
+print(*sorted(list((arr1 + arr2))))
 
 
 """
 2 2
 3 5
-2 9 3
+2 9
 >
 2 3 5 9
 

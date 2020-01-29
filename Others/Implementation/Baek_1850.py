@@ -10,8 +10,9 @@
 from math import gcd
 
 A, B = map(int, input().split())
-if A < B: A, B = B, A
-print(gcd(A, B))
+res = gcd(A, B)
+print("1" * res)
+
 
 """
 3 4
