@@ -2,7 +2,7 @@
     @ 1149. RGB거리
     @ Prob. https://www.acmicpc.net/problem/1149
      Ref.
-    @ Algo: Recursion
+    @ Algo: DP
     @ Start day: 20. 01. 12.
     @ End day: 20. 01. 12.
 """
