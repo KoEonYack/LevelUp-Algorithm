@@ -9,7 +9,7 @@
 
 input_str = input()
 arr = list(input_str)
-cord = len(arr)
+cord = len(arr) -1
 
 for i in range(int(input())):
     command = list(map(str, input().split()))
@@ -25,13 +25,12 @@ for i in range(int(input())):
             continue
         cord += 1
     elif command[0] == "B":
-        if cord < 0:
-            cord = 0
+        if cord == 0:
+            continue
         print("pop", cord)
         print(arr)
-        arr.pop(cord-1)
+        arr.pop(cord)
         cord -= 1
-
 
 print(arr)
 
