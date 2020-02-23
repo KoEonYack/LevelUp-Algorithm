@@ -10,18 +10,14 @@
 from collections import deque
 import sys
 
-#input = sys.stdin.readline
-#print = sys.stdout.write
+input = sys.stdin.readline
+print = sys.stdout.write
 
-#leftQ = deque(list(input()))
-leftQ = [input()]
+leftQ = deque(list(input()))
+rightQ = deque([])
 N = int(input())
-#rightQ = deque([])
 
-
-rightQ = []
-
-for i in range(N):
+for _ in range(N):
     command = list(map(str, input().split()))
     if command[0] == "L":
         if len(leftQ) != 0:
@@ -39,18 +35,14 @@ for i in range(N):
         leftQ.append(command[1])
 
 
-#while rightQ:
-#    leftQ.append(rightQ.pop())
+while leftQ:
+    rightQ.append(leftQ.pop())
 
-#for a in leftQ:
-#    print(a, end="")
+while rightQ:
+    print(rightQ.pop().replace("\n", ""))
 
-print(''.join(leftQ+rightQ[::-1]))
-#res = ""
-#for a in rightQ:
-#    res = a + res
-
-#print(res, end="")
+print("\n")
+#print(''.join(leftQ+rightQ[::-1]))
 
 
 """
