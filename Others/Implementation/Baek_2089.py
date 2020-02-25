@@ -9,7 +9,24 @@
 """
 
 N = int(input())
-print(bin(N))
+base = 1
+st = []
+
+if N == 0:
+    print(0)
+else:
+    while N:
+        if N % 2:
+            st.append(1)
+            N -= base
+        else:
+            st.append(0)
+        base *= (-1)
+        N //= 2
+
+for num in st[::-1]:
+    print(num, end="")
+
 
 """
 -13

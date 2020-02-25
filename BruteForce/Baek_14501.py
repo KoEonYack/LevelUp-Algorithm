@@ -9,11 +9,13 @@
 
 def go(currentDay, totalPay):
     global ans
-    if currentDay == totalPay:
+
+    if totalPay > ans and currentDay <= N:
         ans = totalPay
+    if currentDay >= N:
         return
-    if currentDay >= 7:
-        return
+
+
     go(currentDay + T[currentDay], totalPay + P[currentDay])
     go(currentDay + 1, totalPay)
 
