@@ -9,13 +9,7 @@
 """
 
 A, B, C = map(int, input().split())
-
-res = 1
-for i in range(B):
-    res = res * A
-    res = res % C
-
-print(res)
+print(pow(A, B, C))
 
 """
 10 11 12
