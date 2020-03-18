@@ -1,6 +1,7 @@
 # LevelUp-Algorithm
 
 ## History 
+<br>
 
 <div style="border: 1px solid black">
 <img src="/img/400.JPG">
