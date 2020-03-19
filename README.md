@@ -1,11 +1,8 @@
 # LevelUp-Algorithm
 
 ## History 
-<br>
 
-<div style="border: 1px solid black">
-<img src="/img/400.JPG">
-</div>
+![400](/img/400.JPG)
 
 - __19년 12월 30일:__ 백준 첫 문제 풀이
 - __20년 01월 05일:__ 100문제 돌파
