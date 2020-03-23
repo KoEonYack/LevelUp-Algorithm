@@ -10,34 +10,48 @@
 from collections import deque
 
 N = int(input())
-MAP = []
+MAP = [[] for _ in range(N+1)]
 ind = [0] * (N+1)
 time = [0] * (N+1)
+result = [0] * (N+1)
+
 for i in range(1, N+1):
-    t, m, *jobs = map(int, input().split())
+    t, edgeCnt, *jobs = map(int, input().split())
     time[i] = t
-    MAP.append(jobs)
-    ind[i] = m
 
+    for j in range(edgeCnt):
+        head = jobs[j]
+        MAP[head].append(i)
+        ind[i] += 1
 
-for a in MAP:
-    print(a)
-print(ind)
+    # time[i] = t
+    # MAP.append(jobs)
+    # ind[i] = m
+
+# for a in MAP:
+#     print(a)
+# print(ind)
 
 q = deque()
 for i in range(1, N):
     if ind[i] == 0:
         q.append(i)
+        result[i] = time[i]
 
 while q:
     x = q.popleft()
-    print(x, end=" ")
+    #print(x, end=" ")
+
     for num in MAP[x]:
+        result[num] = max(result[num], result[x] + time[num])
+        # if result[num] < result[x] + time[num]:
+        #     result[num] = result[x] + time[num]
+
         ind[num] -= 1
         if ind[num] == 0:
-            print("here")
             q.append(num)
 
+print(max(result))
 
 """
 7
