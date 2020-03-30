@@ -6,11 +6,11 @@
 
 A = int(input())
 B = int(input())
-intList_B = [int(i) for i in str(B)]
-intList_B.reverse()
+arr_B = [int(i) for i in str(B)]
+arr_B.reverse()
 
-for i in range(len(intList_B)):
-    print(A * intList_B[i])
+for i in range(len(arr_B)):
+    print(A * arr_B[i])
 print(A * B)
 
 """

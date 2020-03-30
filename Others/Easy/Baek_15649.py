@@ -10,11 +10,8 @@ from itertools import permutations
 N, M = map(int, input().split())
 arr = [str(i+1) for i in range(N)]
 
-for ele in list(permutations(arr, M)):
-    for num in ele:
-        print(num, end=" ")
-    print(end="\n")
-
+for e in list(permutations(arr, M)):
+    print(" ".join(e))
 
 """
 4 4 

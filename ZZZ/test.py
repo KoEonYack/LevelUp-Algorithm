@@ -1,22 +1,17 @@
-N, K = map(int, input().split())
-arr = list(map(int, input().split()))
+from queue import PriorityQueue
 
-ans = 0
-while N > 1:
-    N -= (K-1)
-    ans += 1
-print(ans)
+que = PriorityQueue()
 
-"""
-8 3
-7 3 1 8 4 6 2 5
->
-4
----------------------
-37 4
-31 36 20 30 1 9 6 13 3 29 11 25 7 8 2 24 34 18 26 15 23 28 37 19 21 4 32 14 16 10 12 27 22 35 5 17 33
->12
+que.put(4)
+que.put(10)
+que.put(2)
 
-33
-1, 11
-"""
+for i in range(len(que.queue)):
+    print(que.queue[i], end=" ")
+
+
+print(que.get())
+print(que.get())
+
+
+## 작은 것 부터 나온다.
