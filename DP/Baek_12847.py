@@ -11,17 +11,19 @@
 N, M = map(int, input().split())
 arr = [0] + list(map(int, input().split()))
 res = sum(arr[1:M+1])
+maxV = res
 #print(res)
 for i in range(M+1, N+1):
     # print(i)
-    if res < res - arr[i] + arr[i-M]:
-        res = res - arr[i] + arr[i-M]
+    res = res + arr[i] - arr[i-M]
+    if maxV < res:
+        maxV = res
 
-print(res)
+print(maxV)
 
 """
-5 3
-10 20 30 20 10
+6 6
+10 20 30 20 10 90
 >
 70
 """
