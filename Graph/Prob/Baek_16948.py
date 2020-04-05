@@ -31,6 +31,8 @@ while q:
 #     print(a)
 
 print(check[r2][c2])
+
+
 """
 7
 6 6 0 1

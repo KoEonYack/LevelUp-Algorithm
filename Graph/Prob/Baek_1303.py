@@ -9,7 +9,6 @@
 
 from collections import deque
 
-
 def BFS():
     q.append((i, j))
     check[i][j] = 1
