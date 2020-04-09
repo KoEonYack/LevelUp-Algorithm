@@ -1,17 +1,7 @@
-from queue import PriorityQueue
+arr = ["1", "0", "1"]
 
-que = PriorityQueue()
-
-que.put(4)
-que.put(10)
-que.put(2)
-
-for i in range(len(que.queue)):
-    print(que.queue[i], end=" ")
-
-
-print(que.get())
-print(que.get())
-
-
-## 작은 것 부터 나온다.
+arr = arr.reverse()
+if "".join(arr) == "".join(rev_arr):
+    print(1)
+else:
+    print()
