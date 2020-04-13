@@ -7,13 +7,32 @@
     @ End day: 20. 04. 06.
 """
 
-DP = [0] * 8 # 100
+def maxCalorie(cash):
+    cash = int(cash)
+    print("test", cash)
+    result = cache[cash]
+    if result != -1:
+        return result
+
+    result = 0
+    for i in range(N):
+        if cash - candy[i][1] >= 0:
+            result = max(result, candy[i][0] + maxCalorie(cash - candy[i][1]))
+    return result
+
+
+cache = [-1] * (100 * 100 + 1)
+candy = [0] * (5000 + 1)
 
 while True:
-    c, p = map(float, input().split())
-    if int(c) == 0 and int(p) == 0:
+    N, M = map(str, input().split())
+    if int(N) == 0 and M == "0.00":
         break
-
+    N = int(N)
+    for i in range(N):
+        C, P = map(float, input().split())
+        candy[i] = [C, (P*100 + 0.5)]
+    print(maxCalorie(int(float(M) * 100 + 0.5)))
 
 
 """
@@ -30,3 +49,6 @@ while True:
 798
 
 """
+
+
+
