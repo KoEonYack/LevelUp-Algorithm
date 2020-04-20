@@ -1,5 +1,5 @@
+from collections import deque
 
-M = 3
-N = 2
-cache = [[False] * M for _ in range(N)]
-print(cache)
+q = deque()
+q.append(1)
+print(q[-1])
