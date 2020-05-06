@@ -8,8 +8,6 @@
     @ End day: 20. 05. 04.
 """
 
-from collections import deque
-
 
 def solution(n): # n : 종료지점
     ans = 0

@@ -11,21 +11,21 @@
 
 def solution(n, words):
     part = 1
-    human = -1
+    seq = -1
     prev_word = words[0][-1]
     flag = False
     for i in range(1, len(words)):
         if i % n == 0:
             part += 1
         if prev_word != words[i][0] or words[i] in words[:i]:
-            human = i
+            seq = i
             flag = True
             break
         prev_word = words[i][-1]
 
     if flag is False:
         return [0, 0]
-    return [human % n + 1, part]
+    return [seq % n + 1, part]
 
 
 print(solution(3, ["tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"]))
