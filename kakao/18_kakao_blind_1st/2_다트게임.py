@@ -58,7 +58,6 @@ def solution(dartResult):
             tmp *= -1
         i += 1
 
-    # print(tmp)
     total += tmp
     return total
 
