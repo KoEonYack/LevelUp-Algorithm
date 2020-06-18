@@ -1,11 +1,11 @@
 """
-    @ Baek 18883
+    @ Baek 18883 N M 찍기
     @ Prob. https://www.acmicpc.net/problem/17413
       Ref.
       Ref Prob.
     @ Algo: 구현
-    @ Start day: 20. 01. 26
-    @ End day: 20. 01. 26
+    @ Start day: 20. 06. 18.
+    @ End day: 20. 06. 18.
 """
 
 N, M = map(int, input().split())
