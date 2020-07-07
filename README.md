@@ -22,6 +22,10 @@
 - 위상정렬
     - [백준 2252번: 줄 세우기](https://www.acmicpc.net/problem/2252)
     - [백준 1766번: 문제집](https://www.acmicpc.net/problem/1766)
+- MST
+    - [백준 1197번: 최소 스패닝 트리](https://www.acmicpc.net/problem/1197)
+        - Baek_1197_2: Prime 풀이
+
 
 # Rain
 
