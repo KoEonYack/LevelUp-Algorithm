@@ -1,77 +1,73 @@
 """
-    @ Baek 11657. 선진이의 겨울 왕국
+    @ Baek 11657. 최소비용 구하기
     @ Prob. https://www.acmicpc.net/problem/11657
      Ref.
-    @ Algo: BFS
-    @ Start day: 20. 03. 19.
-    @ End day: 20. 03 19.
+    @ Algo: 최단거리 (벨만포드)
+        - 벨만포드의 특징인 음수 싸이클을 고려한 문제
+    @ Start day: 20. 07. 09.
+    @ End day: 20. 07. 09.
 """
 
-from collections import deque
+def bellman():
+    flag = False
+    for i in range(V-1):
+        for j in range(E):
+            From = edges[j][0]
+            to = edges[j][1]
+            cost = edges[j][2]
+            if dist[From] != inf and dist[to] > dist[From] + cost:
+                dist[to] = dist[From] + cost
+                flag = True
+    return flag
 
-dx = [0, 0, -1, 1]
-dy = [-1, 1, 0, 0]
+V, E = map(int, input().split())
 
-# M: 세로 N: 가로
-M, N = map(int, input().split())
-MAP = [list(input()) for _ in range(M)]
-sx, sy = map(int, input().split())
-ex, ey = map(int, input().split())
-q = deque()
-q.append((sx-1, sy-1))
-t = [0, 0]
+edges = []
+for _ in range(E):
+    s, e, w = map(int, input().split())
+    edges.append([s, e, w])
 
-if MAP[ex-1][ey-1] == 'X':
-    print("NO")
+inf = 987654321
+dist = [inf] * (V+1)
+
+dist[1] = 0
+bellman()
+# dist[1] = 0
+
+if bellman() is True:
+    print(-1)
 else:
-    while q:
-        x, y = q.popleft()
-        for i in range(4):
-            nx, ny = x + dx[i], y + dy[i]
-            if 0 <= nx < M and 0 <= ny < N:
-                if nx == ex - 1 and ny == ny - 1:
-                    break
-                elif MAP[nx][ny] != 'X':
-                    q.append((nx, ny))
-                    MAP[nx][ny] = "X"
-                    print(nx, ny)
-
-for a in MAP:
-    print(a)
-
-
-
+    for i in range(2, len(dist)):
+        if dist[i] == inf:
+            print(-1)
+        else:
+            print(dist[i])
 
 """
-4 6
-X...XX
-...XX.
-.X..X.
-......
-1 6
-2 2
->
-YES
---------------
-5 4
-.X..
-...X
-X.X.
-....
-.XX.
-5 3
 1 1
->
-NO
-----------------
-4 7
-..X.XX.
-.XX..X.
-X...X..
-X......
-2 2 
-1 6
->
-YES
+1 1 1
 
+3 4
+1 2 4
+1 3 3
+2 3 -1
+3 1 -2
+>
+4
+3
+----------------------
+3 4
+1 2 4
+1 3 3
+2 3 -4
+3 1 -2
+>
+-1
+---------------------
+3 2
+1 2 4
+1 2 3
+>
+3
+-1
 """

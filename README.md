@@ -28,6 +28,8 @@
         - Baek_1197_3: Kruskal 풀이
     - [백준 1916번: 최소비용 구하기](https://www.acmicpc.net/problem/1916)
         - Baek_1916_2: Bellman-Ford 풀이
+    - [백준 11657번: 최소비용 구하기](https://www.acmicpc.net/problem/11657)
+        - Baek_1916_2: Bellman-Ford 풀이 연습
 
 
 ## Cloud
