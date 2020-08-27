@@ -13,9 +13,12 @@
 
 ## 문제 추천
 
-- 튼튼한 기본기
+- 튼튼한 기본기를 위해서라면
     - 배열
-        - [백준 14918번 임시 반장 정하기](https://www.acmicpc.net/problem/14918)
+        - [백준 14918: 임시 반장 정하기](https://www.acmicpc.net/problem/14918)
+    - 재귀 탐색 기본
+	    - [백준 14888: ](https://www.acmicpc.net/problem/14888)
+
 
 ## 뼈대 문제
 
