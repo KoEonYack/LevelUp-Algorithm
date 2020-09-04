@@ -17,10 +17,13 @@
     - 배열
         - [백준 14918: 임시 반장 정하기](https://www.acmicpc.net/problem/14918)
     - 재귀 탐색 기본
-	    - [백준 14888: ](https://www.acmicpc.net/problem/14888)
+	    - [백준 14888: 연산자 끼워넣기](https://www.acmicpc.net/problem/14888)
 
 
 ## 뼈대 문제
+
+- KMP
+	- [백준 16916: 부분 문자열](https://www.acmicpc.net/problem/16916)
 
 - 위상정렬
     - [백준 2252번: 줄 세우기](https://www.acmicpc.net/problem/2252)
