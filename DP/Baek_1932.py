@@ -1,11 +1,4 @@
-"""
-    @ 1932. 정수 삼각형
-    @ Prob. https://www.acmicpc.net/problem/1932
-     Ref.
-    @ Algo: DP
-    @ Start day: 20. 01. 13.
-    @ End day: 20. 01. 13.
-"""
+
 
 import sys
 

@@ -18,7 +18,8 @@
         - [백준 14918: 임시 반장 정하기](https://www.acmicpc.net/problem/14918)
     - 재귀 탐색 기본
 	    - [백준 14888: 연산자 끼워넣기](https://www.acmicpc.net/problem/14888)
-
+- DP 초급반
+    - 백준 2293 동전1
 
 ## 뼈대 문제
 
