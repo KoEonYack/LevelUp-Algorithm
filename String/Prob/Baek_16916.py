@@ -24,8 +24,6 @@ for i in range(1, len(P)):
     if P[i] == P[j]:
         j += 1
         pi[i] = j
-print(pi)
-        
     
 
 textLen = len(S)

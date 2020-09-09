@@ -14,16 +14,10 @@ N = int(input())
 arr = [0] + list(map(int, input().split()))
 DP = [sys.maxsize] * 2 * (N + 1) 
 
-
 DP[0] = DP[1] = 0
-
-# for i in range(arr[0]+1):
-#     DP[i] = 1
 
 for i in range(1, N+1): 
     for j in range(i, i+arr[i]+1):
-        #if i >= N + 1: break
-        # print(j, DP[i]+1, DP[j], DP)
         if i < N + 1:
             DP[j] = min(DP[i]+1, DP[j])
 
