@@ -37,11 +37,18 @@ def solution(n, t, m, timetable):
                 print(bus_arrive_time)
                 del line_up[j]
         
-    return 
+    return
 
-n = 1
-t = 1
-m = 5
-timetable = ["08:00", "08:01", "08:02", "08:03"]
+n = 1 
+t = 1 
+m = 1 
+# timetable = ["08:00", "08:01", "08:02", "08:03"]
+timetable = ["23:59"]
+# timetable = ["23:59", "23:59", "23:59", "23:59",
+#              "23:59", "23:59", "23:59", "23:59",
+#              "23:59", "23:59", "23:59", "23:59",
+#              "23:59", "23:59", "23:59", "23:59",]
+
+# [23:59
 print(solution(n, t, m, timetable)) # 09:00
 

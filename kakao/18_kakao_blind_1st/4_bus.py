@@ -3,7 +3,7 @@
     @ Prob. https://programmers.co.kr/learn/courses/30/lessons/17678
       Ref.
       
-https://github.com/jms7446/hackerrank/blob/d6c5d6d25dd6deb9de36415f4a8674f829a8a852/baekjoon/alg-study/w18/prog_17678.py
+            https://github.com/jms7446/hackerrank/blob/d6c5d6d25dd6deb9de36415f4a8674f829a8a852/baekjoon/alg-study/w18/prog_17678.py
       Ref Prob.
     @ Algo: 구현
     @ Start day: 20. 09. 08.
