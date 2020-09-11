@@ -1,5 +1,5 @@
 """
-    @ Baek 1786 찾기 [Fail]
+    @ Baek 1786 찾기 
     @ Prob. https://www.acmicpc.net/problem/1786
       Ref.  https://github.com/jms7446/hackerrank/blob/master/baekjoon/alg-study/w18/p16916.py
     @ Algo: String
