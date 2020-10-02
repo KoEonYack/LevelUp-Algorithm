@@ -1,42 +1,39 @@
-'''
-    @ Baek 1700
+"""
+    @ Baek 1700. 멀티탭 스케줄링
     @ Prob. https://www.acmicpc.net/problem/1700
-      Ref. https://donggod.tistory.com/89
+      Ref. https://jaimemin.tistory.com/759
       Ref Prob.
     @ Algo: Greedy
     @ Start day: 19. 12. 24
-    @ End day: 19. 12.
-'''
+    @ End day: 20. 09. 29.
+"""
 
 
-def solution():
-    answer = 0
-    currentHoleState = []
-    cache = []
+# N, K : 멀티탭 구멍의 갯수, K 전기 용품의 총 사용 횟수
+N, K = map(int, input().split())
 
-    for i in range(N):
-        if arr[i] in currentHoleState:      # 콘센트 구멍에 꽂힌 경우
-            continue
-        elif len(currentHoleState) < numHole: # 여유 자리가 있는 경우
-            currentHoleState.append(arr[i])
-        else:                         # 현재 꼽힌 것 중 가장 나중에 사용하는거 제거
-            answer += 1
-            longVal = 0
-            for num in currentHoleState:
+plans = list(map(int, input().split()))
+use = [0] * N
 
+for plan in plans:
+    # 전기 용품이 이미 꽃혀 있는지
+    if plan in use:
+        continue
 
-    return answer
+    # 비어 있는 구멍이 있는지 확인
+    if 0 in use:
+        use[use.index(0)] = plan
+        continue
 
-
-numHole, N = map(int, input().split())
-arr = list(map(int, input().split()))
-
-print(solution())
-
+    # 가장 나중에 사용
+    # 앞으로 사용하지 않을 것
+    for j in N:
+        pass
 
 
 
 """
 2 7
 2 3 2 3 1 2 7
+> 2
 """
