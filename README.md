@@ -23,6 +23,8 @@
 
 ## 뼈대 문제
 
+- DFS로 검사
+    - [백준 1062: 가르침](https://www.acmicpc.net/problem/1062)
 - KMP
 	- [백준 16916: 부분 문자열](https://www.acmicpc.net/problem/16916)
 
