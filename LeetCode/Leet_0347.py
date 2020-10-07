@@ -12,18 +12,21 @@ from collections import Counter
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-
-
-        Counter().most_common()
+        print(Counter(nums).most_common())
+        return [val[0] for i, val in enumerate (Counter(nums).most_common()) if i < k] 
         
         
 if __name__ == "__main__":
     nums = [1,1,1,2,2,3]
     k = 2
-    solution = Solution(nums, KeyboardInterrupt)
+    nums = [1,1,1,2,2,3]
+    k = 2
     
+    solution = Solution()
+    print(solution.topKFrequent(nums, k))
+
+
 """
 Input: nums = [1,1,1,2,2,3], k = 2
 Output: [1,2]
 """
-        
