@@ -10,7 +10,7 @@
 <details>
   <summary> 펼쳐보기 (👈 Clink) </summary>
 
-![500](/img/500.PNG)
+![500](/_img/500.PNG)
 
 <ul>
   <li> <b>19년 12월 30일: </b> 백준 첫 문제 풀이 </li>
